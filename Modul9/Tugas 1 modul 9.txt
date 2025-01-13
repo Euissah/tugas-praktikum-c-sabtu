@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+ 
+    int A[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int N, found = 0;
+
+    printf("Masukkan nilai N: ");
+    scanf("%d", &N);
+
+    for (int i = 0; i < 11; i++) {
+        if (A[i] == N) {
+            printf("ADA, ditemukan pada index %d\n", i);
+            found = 1; 
+            Break;
+        }
+    }
+
+    if (!found) {
+        printf("TIDAK ADA\n");
+    }
+
+    return 0;
+}
